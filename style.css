@@ -55,7 +55,8 @@ input{
     border: 1px solid rgba(0, 0,0, 0.2);
     outline: none;
     height: 40%;
-    width: 400px;
+    width: 700px;
+    margin-left: 300px;
 }
 
 .form__button{
@@ -113,6 +114,7 @@ input{
     align-items: center;
     justify-content: center;
     height: 100%;
+    cursor: pointer;
 }
 
 .sidebar__boxes{
@@ -128,6 +130,7 @@ input{
     height: 50px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .sidebar__icons{
@@ -153,4 +156,89 @@ i {
     align-items: center;
     padding-left: 30px;
     text-transform: uppercase;
+}
+
+/* sidebar ends  */
+
+/* view(videos) start  */
+
+
+.view {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 50px);
+    width: calc(100vw - 300px);
+    padding: 30px;
+    overflow: scroll;
+}
+
+/* scrollbar fix start  */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* scrollbar fix ends  */
+
+.view__recommended{
+    display: grid;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+
+}
+
+.view__heading{
+    margin-bottom: 30px;
+}
+
+.video--div{
+    width: 200px;
+    position: relative;
+}
+
+.video--img{
+    height: 100px;
+    width: 200px;
+}
+
+.heading--video{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.heading--channel{
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.heading--stats{
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.show--more{
+    border-bottom: 1px solid #999;
+    margin-bottom: 30px;
+    padding-bottom: 20px; 
 }
