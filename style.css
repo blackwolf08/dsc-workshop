@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.root{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar CSS start */
+
+nav {
+    width: calc(100% - 100px);
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 40%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid rgba(0, 0,0, 0.2);
+    outline: none;
+    height: 40%;
+    width: 400px;
+}
+
+.form__button{
+    padding: 10px;
+    height: 40%;
+    border: none;
+    outline: none;
+    width: 60px;
+    margin-left: -10px;
+    border: 1px solid rgba(0, 0,0, 0.2);
+    background-color: #eee;
+}
+
+.nav__right{
+    width: 300px;
+    justify-content: space-around;
+}
+
+.avatar{
+    background-image: url('./assets/avatar.jpg');
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+
+}
+
+/* Navbar css ends  */
