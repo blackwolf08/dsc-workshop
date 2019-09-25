@@ -15,13 +15,23 @@
                 <input type="text" name="" placeholder="Search" id="">
                 <button class="form__button"><i class="fa fa-search"></i></button>
             </div>
-            <img class="logo logo-mobile" src="./assets/logo.png">
+            <img id="logo" class="logo logo-mobile" src="./assets/logo.png">
 
             <div class="df nav__right">
                 <i class="fa no-mobile-icon fa-video"></i>
                 <i class="fa no-mobile-icon fa-bell"></i>
                 <i class="fa no-mobile-icon fa-reply"></i>
-                <div class="avatar"></div>
+                <div id="avatar" class="avatar">
+                    
+                </div>
+                <div id="popover" class="popover">
+                    <ul>
+                        <li><i class="fa fa-home"></i>&nbsp;Your Account</li>
+                        <li><i class="fa fa-sign-out"></i>&nbsp;Logout</li>
+                    </ul>
+                    <br>
+                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                </div>
             </div>
         </nav>
         <nav class="mobile-nav">
@@ -274,5 +284,6 @@
             <h4 class="show--more">Show More</h4>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
